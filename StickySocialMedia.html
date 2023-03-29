@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Create a Fixed/Sticky Social Media Toggle Icon Bar with CSS </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body{
+        background-color: #0f172a;
+    }
+     .icons {
+          margin:2px;
+          position: fixed;
+          top:  30%;
+          right: 0%;
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          background-color: transparent !important;
+          z-index: 1;
+         
+      }
+      .icons a{
+          flex-direction: none;
+          text-decoration: uppercase;
+          padding:10px;
+          font-size:22px;
+          font-family:'oswald'san-serif;
+          text-align: left;
+          border-radius: 50px 0px 0px 50px; 
+          transform: translate(180px, 0px); 
+          transition: all 0.5s;
+       
+          
+      }.icons a:hover { 
+          transform: translate(0px, 0px); }.icons a:hover span{ transform: rotate(360deg); }
+      .icons a span {
+          background-color: white;
+          margin-right:25px;
+          height: 40px;
+          width: 40px;
+          color: black;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          transition: all 0.5s;
+      } .icons a{
+          text-transform:uppercase;
+      }
+      .facebook{
+          background-color: #2c80d3;
+          color: #fff;
+      }
+      .youtube{
+          background-color: #fa0910;
+          color: #fff;
+      }.twitter{
+          background-color: #53c5ff;
+          color: #fff;
+      }.linkedin{
+          background-color: #007bb5;
+          color: #fff;
+      }.WhatsApp{
+          background-color: green;
+          color: #fff;
+      }
+
+      h1{
+        text-align: center; color: #fff; font-size: 30px; margin-top: 300px;
+      }
+      h1 span{
+            font-style: italic;
+      }
+      
+</style>
+</head>
+<body>
+   <h1> Built with love by <span> Balikis Omolewa </span></h1>
+ <div class="icons">
+        <a href="#" class="facebook" style="color:#fff;"><span class="fa fa-facebook face" style="color:#2c80d3;"></span>Facebook </a>
+         <a href="#" class="youtube" style="color:#fff;"> <span class="fa fa-youtube tube" style="color:#fa0910;"></span>Youtube</a>
+          <a href="#" class="twitter" style="color:#fff;"><span class="fa fa-twitter twi" style="color:#53c5ff;"></span>Twitter</a>
+          <a href="#" class="linkedin" style="color:#fff;"><span class="fa fa-linkedin " style="color:#007bb5;"></span>linkedin</a>
+          <a href="#" class="WhatsApp" style="color:#fff;"><span class="fa fa-whatsapp " style="color:#075E54;"></span>WhatsApp</a>
+    </div>
+</body>
+</html>
